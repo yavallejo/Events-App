@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
+import { getFeaturedEvents } from "../dummy-data";
+import EventList from "../components/events/EventList";
 
 export default function Home() {
+    const featuredEvents = getFeaturedEvents();
     return (
         <div>
             <Head>
@@ -10,7 +12,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <h1>Hello World!</h1>
+                <h1 className="titleApp">Hello World!</h1>
+                <EventList items={featuredEvents} />
             </main>
         </div>
     );
