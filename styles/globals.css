@@ -16,6 +16,10 @@ a {
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .titleApp {
     text-align: center;
     color: white;
