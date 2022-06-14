@@ -24,3 +24,8 @@ ul {
     text-align: center;
     color: white;
 }
+
+.center {
+    text-align: center;
+    margin-inline: auto;
+}
